@@ -2,14 +2,20 @@
 Prospectando clientes ou alvos
 
 
-## Explicação
-> O que é prospectar um cliente.
+## Antes de começar
+Esse post tem como meta mostrar soluções que nos ajuda na coleta de informações de pessoas, o elo mais fraco da segurança da informação, com essas informações conseguimos obter, e-mail, cargo, empresa onde trabalha, localização, possíveis tecnologias que a empresa usa, telefone, aniversario, quantidade de funcionários e dependendo da pessoa conseguimos encontrar mais informações ainda.
+
+### O que é prospectar um cliente?
+Buscando pela palavra **prospectar** ela tem o significado de fazer pesquisas numa mina,petrolíferas ou jazida de minérios para determinar seu valor. Já quando estamos falando de prospectar um cliente podemos entender como, um processo organizado de forma estruturada na buscar novos clientes para comprar os produtos ou até serviços que sua empresa vende.
+
+### O que é prospectar um alvo ?
+Já no ponto de vista de um hacker, a coleta de informações é muito importante. Seja em um pentest que tem autorização, só tem um domínio e precisa coletar o máximo de informações dos funcionários e buscar uma porta de entrada. Essas informações podem ser usadas em ataques de phishing, criar wordlists personalizadas e até usando esses dados para criar contas de laranjas.
 
 ## Quais informações são importantes
 - e-mails
 - contato de telefone
 - Tecnologias que uma empresa usa
-- Redes sociais <-
+- Redes sociais
 
 ## O uso do e-mail
 O envio de e-mail hoje em dia está começando a cair no desuso, por mais que tenham outras formas para entrar em contato, continua sendo uma ótima forma para ter contato com um uma pessoa chave, seja ele o CEO, CTO ou até sysadmins.
@@ -72,19 +78,22 @@ Conseguimos informações como
 
 > Infelizmente nem todas as informações estão certas, mas já é um grande passo e pode nos ajudar a saber mais cliente/alvo.
 
+> Infelizmente é uma ferramenta paga, mas conseguimos usar uma conta gratuita, temos créditos disponíveis para testar o serviço e é o necessário para realizar algumas pesquisas.
+
 ### skrapp
-O Skrapp.io é a solução que nos auxilia na extração de informações do Linkedin. Ele tem com uma extenção no chrome, só precisamos estar na pagina do contato que queremos obter a informação e clicar nela que carrega todas as informações disponiveis.
+O Skrapp.io é a solução que nos auxilia na extração de informações do Linkedin. Ele tem com uma extenção no chrome, só precisamos estar na pagina do contato que queremos obter a informação e clicar nela que carrega todas as informações disponíveis.
 ```sh
 https://skrapp.io
 ```
 
-> Infelizmente alguns contatos ele não consegue obter emails, mas retornas informações legais como:
+> Infelizmente alguns contatos ele não consegue obter e-mails, mas retornas informações legais como:
 
 - Cargo
 - Empresa
 - Localização
 - Email (Mostrando uma porcentagem de ser o verdadeiro, por exemplo 75%)
 
+> Além disso é uma ferramenta paga, porem temos como usar ela de forma gratuita, porem temos um limite de créditos.
 
 ### get prospect
 O **get prospect** é uma solução que nos ajuda na coleta de informações de contatos do linkedin, com ele conseguimos obter informações importantes que podemos usar para prospectar um cliente.
@@ -92,7 +101,7 @@ O **get prospect** é uma solução que nos ajuda na coleta de informações de 
 https://getprospect.io
 ```
 
-Ele semelhante as soluções que mostramos anteriormente, tambem usa extensão no google chrome e conseguimos obter informações como:
+Ele semelhante as soluções que mostramos anteriormente, também usa extensão no google chrome e conseguimos obter informações como:
 - Nome e sobrenome
 - Informações de contato
 - Cargo
@@ -103,12 +112,12 @@ Ele semelhante as soluções que mostramos anteriormente, tambem usa extensão n
 - Website
 - Link do linkedin
 
-> E algumas outras informações, mas essas já são necessarios para obter informações.
+> E algumas outras informações, mas essas já são necessários para obter informações. Um problema é que precisamos de um e-mail corporativo para usar ele, mas temos como criar contas free.
 
 ## Tecnologias
 É importante saber quais tecnologias uma empresa usa, na hora de tentar vender um produto conseguimos saber se já trabalhamos com essa tecnologia, caso tenha uma solução melhor já conseguimos mostrar os pros e contras.
 
-Já na visão de um atacante, saber quais tecnologias é usada pode ajudar na coleta de informações e para fazer um ataque direcionado.  
+Já na visão de um atacante, saber quais tecnologias é usada pode ajudar na coleta de informações e para fazer um ataque direcionado.  
 
 ### wappalyzer
 Podemos usar o wappalyzer para saber quais tecnologias uma empresa usa, dessa forma conseguimos mapear melhor e estar melhor preparado.
@@ -116,3 +125,36 @@ Podemos usar o wappalyzer para saber quais tecnologias uma empresa usa, dessa fo
 ```sh
 https://www.wappalyzer.com/
 ```
+
+## Buscando mais informações usando motores de busca
+Motores de busca pode nos auxiliar na coleta de informações de sites, alem de ter operadores que nos ajudam a filtrar melhor as informações e com poucos operadores já conseguimos trazer informações importantes.
+
+### Google
+Google é o maior motor de busca, ele indexa paginas de toda a internet e com ele conseguimos buscar diversas informações.
+
+#### Filtrando site
+Vamos começar usando o operador **site**, ele é responsável por filtrar informações de um determinado site, por exemplo:
+```sh
+site:ezdevs.com.br
+```
+> Nesse exemplo só está buscando informações do site da ezdevs.com.br
+
+#### Filtrando negação
+Alem do operador site, podemos usar o operador **not** com o uso de **-** e assim negando algo.
+```sh
+site:ezdevs.com.br -reactnative
+```
+> Dessa forma estamos buscando no site da ezdevs.com.br e negando **reactnative**.
+
+#### Filtrando e trazendo
+Com o uso de aspas conseguimos buscar por uma determinada palavra, vou dar o exemplo da busca de palavras que tenhas **@ezdevs.com.br** no site da ezdevs.
+```sh
+site:ezdevs.com.br "@ezdevs.com.br"
+```
+> Dessa forma conseguimos trazer possíveis e-mails.
+
+Vamos usar outro exemplo para buscar por possíveis telefones.
+```sh
+site:ezdevs.com.br "(14)"
+```
+> Sabendo que **(14)** é o código da região, podemos filtrar por possíveis números e assim coletando possíveis telefones.
