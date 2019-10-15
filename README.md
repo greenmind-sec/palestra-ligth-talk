@@ -9,6 +9,7 @@ Prospectando clientes ou alvos
 - e-mails
 - contato de telefone
 - Tecnologias que uma empresa usa
+- Redes sociais <-
 
 ## O uso do e-mail
 O envio de e-mail hoje em dia está começando a cair no desuso, por mais que tenham outras formas para entrar em contato, continua sendo uma ótima forma para ter contato com um uma pessoa chave, seja ele o CEO, CTO ou até sysadmins.
@@ -35,7 +36,7 @@ Podemos buscar por e-mails depois que nos logar na aplicação.
 https://hunter.io/search/ezdevs.com.br
 ```
 
-### A importancia do Linkedin
+## A importancia do Linkedin
 O Linkedin é uma rede social voltada ao negócios e nela conseguimos encontrar diversas pessoas ligadas a uma empresa.
 ```sh
 https://www.linkedin.com/
@@ -50,6 +51,59 @@ Por exemplo, conseguimos obter
 - Telefone
 - Aniversario
 - Pessoas com quem trabalha
+
+### lead IQ
+Outra solução interessante é o **lead IQ**, com ele conseguimos capturar informações importantes que estão disponiveis no linkedin e ainda criar listar com as informações obtidas. Ele tem uma extensão no chrome que auxilia na captura de contatos, basta entrar na pagina do contato que ele captura as informações disponiveis.
+```sh
+https://leadiq.com
+```
+
+Infelizmente devido as configurações de privacidade muitos contatos só vamos conseguir informações se nós tivermos como conexão na rede social.
+
+Conseguimos informações como
+- Social profile
+- Email profissional
+- dominio do email
+- Localização
+- Tipo de compania
+- Tamanho da empresa
+- Dominio da empresa
+- Endereço da empresa
+
+> Infelizmente nem todas as informações estão certas, mas já é um grande passo e pode nos ajudar a saber mais cliente/alvo.
+
+### skrapp
+O Skrapp.io é a solução que nos auxilia na extração de informações do Linkedin. Ele tem com uma extenção no chrome, só precisamos estar na pagina do contato que queremos obter a informação e clicar nela que carrega todas as informações disponiveis.
+```sh
+https://skrapp.io
+```
+
+> Infelizmente alguns contatos ele não consegue obter emails, mas retornas informações legais como:
+
+- Cargo
+- Empresa
+- Localização
+- Email (Mostrando uma porcentagem de ser o verdadeiro, por exemplo 75%)
+
+
+### get prospect
+O **get prospect** é uma solução que nos ajuda na coleta de informações de contatos do linkedin, com ele conseguimos obter informações importantes que podemos usar para prospectar um cliente.
+```sh
+https://getprospect.io
+```
+
+Ele semelhante as soluções que mostramos anteriormente, tambem usa extensão no google chrome e conseguimos obter informações como:
+- Nome e sobrenome
+- Informações de contato
+- Cargo
+- Localização
+- Pais
+- Resumo
+- Empresa
+- Website
+- Link do linkedin
+
+> E algumas outras informações, mas essas já são necessarios para obter informações.
 
 ## Tecnologias
 É importante saber quais tecnologias uma empresa usa, na hora de tentar vender um produto conseguimos saber se já trabalhamos com essa tecnologia, caso tenha uma solução melhor já conseguimos mostrar os pros e contras.
