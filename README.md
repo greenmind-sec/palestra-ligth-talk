@@ -3,13 +3,13 @@ Prospectando clientes ou alvos
 
 
 ## Antes de começar
-Esse post tem como meta mostrar soluções que nos ajuda na coleta de informações de pessoas, o elo mais fraco da segurança da informação, com essas informações conseguimos obter, e-mail, cargo, empresa onde trabalha, localização, possíveis tecnologias que a empresa usa, telefone, aniversario, quantidade de funcionários e dependendo da pessoa conseguimos encontrar mais informações ainda.
+Esse post tem como meta mostrar soluções que nos ajuda na coleta de informações de pessoas, o elo mais fraco da segurança da informação, com essas informações conseguimos obter, e-mail, cargo, empresa onde trabalha, localização, possíveis tecnologias que a empresa usa, telefone, aniversario, quantidade de funcionários e dependendo da pessoa conseguimos encontrar ainda mais informações.
 
 ### O que é prospectar um cliente?
-Buscando pela palavra **prospectar** ela tem o significado de fazer pesquisas numa mina,petrolíferas ou jazida de minérios para determinar seu valor. Já quando estamos falando de prospectar um cliente podemos entender como, um processo organizado de forma estruturada na buscar novos clientes para comprar os produtos ou até serviços que sua empresa vende.
+Buscando pela palavra **prospectar** ela tem o significado de fazer pesquisas numa mina, petrolíferas ou jazida de minérios para determinar seu valor. Já quando estamos falando de prospectar um cliente podemos entender como, um processo organizado de forma estruturada na buscar novos clientes para comprar os produtos ou até serviços que sua empresa vende.
 
 ### O que é prospectar um alvo ?
-Já no ponto de vista de um hacker, a coleta de informações é muito importante. Seja em um pentest que tem autorização, só tem um domínio e precisa coletar o máximo de informações dos funcionários e buscar uma porta de entrada. Essas informações podem ser usadas em ataques de phishing, criar wordlists personalizadas e até usando esses dados para criar contas de laranjas.
+Já no ponto de vista de um hacker, a coleta de informações é muito importante. Seja em um pentest que tem autorização, só tem um domínio, precisa coletar o máximo de informações dos funcionários e buscar uma porta de entrada. Essas informações podem ser usadas em ataques de phishing, criar wordlists personalizadas e até usando esses dados para criar contas de laranjas.
 
 ## Quais informações são importantes
 - e-mails
@@ -18,7 +18,7 @@ Já no ponto de vista de um hacker, a coleta de informações é muito important
 - Redes sociais
 
 ## O uso do e-mail
-O envio de e-mail hoje em dia está começando a cair no desuso, por mais que tenham outras formas para entrar em contato, continua sendo uma ótima forma para ter contato com um uma pessoa chave, seja ele o CEO, CTO ou até sysadmins.
+O envio de e-mail hoje em dia está começando a cair no desuso, por mais que tenham outras formas para entrar em contato, continua sendo uma ótima forma para ter contato com um uma pessoa chave, seja ele o CEO, CTO, finaceiro ou até sysadmins.
 
 Com uma visão de prospectar novos clientes um e-mail pode ajudar em uma abordagem, antes mesmo de entrar em contato via telefone, por mensagem ou até via rede social. Esse tipo de estrategia é usado tanto por pequenas empresas e até grandes multinacionais.
 
@@ -27,6 +27,7 @@ Mas agora visando de um lado de um atacante, esse tipo de contato pode abrir por
 ### Buscando por e-mails
 Atualmente temos diversas formas de conseguir e-mails, tem diversas ferramentas para isso, mas que infelizmente elas acabam interagindo diretamente com os servidores da empresa. Mas com o usado de Open Source Intelligence conseguimos obtê-los da mesma forma.
 
+### Buscando e-mails com hunter.io
 Hunter.io é um projeto que nos auxiliar na busca de e-mails de corporações, podemos usar ele tranquilamente com uma conta gratuita (Porem tem um limite) e só precisamos nos cadastrar.
 ```sh
 https://hunter.io/
@@ -41,6 +42,9 @@ Podemos buscar por e-mails depois que nos logar na aplicação.
 ```sh
 https://hunter.io/search/ezdevs.com.br
 ```
+
+![](images/hunter-01.png)
+> Se nos clicarmos em **sources** conseguimos ver onde ele analisou para obter essa informação. Alem de mostrar um possivel cargo.
 
 ## A importancia do Linkedin
 O Linkedin é uma rede social voltada ao negócios e nela conseguimos encontrar diversas pessoas ligadas a uma empresa.
@@ -59,12 +63,29 @@ Por exemplo, conseguimos obter
 - Pessoas com quem trabalha
 
 ### lead IQ
-Outra solução interessante é o **lead IQ**, com ele conseguimos capturar informações importantes que estão disponiveis no linkedin e ainda criar listar com as informações obtidas. Ele tem uma extensão no chrome que auxilia na captura de contatos, basta entrar na pagina do contato que ele captura as informações disponiveis.
+Outra solução interessante é o **lead IQ**, com ele conseguimos capturar informações importantes que estão disponiveis no linkedin e ainda criar listar com as informações obtidas. Ele tem uma extensão no navegador chrome que auxilia na captura de contatos, basta entrar na pagina do contato que ele captura as informações disponiveis.
 ```sh
 https://leadiq.com
 ```
 
+Podemos criar uma conta no seguinte link
+```sh
+https://account.leadiq.com/app/signin/
+```
+
+![](images/leadiq-01.png)
+> Já cadastrado podemos ver a home do aplicativo
+
+![](images/leadiq-02.png)
+> Ele usa uma extensão que fica instalado no navegador google chrome.
+
 Infelizmente devido as configurações de privacidade muitos contatos só vamos conseguir informações se nós tivermos como conexão na rede social.
+
+Vou realizar um teste usando o meu proprio perfil no linkedin e conseguimos ver algumas informações.
+![](images/leadiq-03.png)
+
+![](images/leadiq-04.png)
+> Nem sempre ele nos retorna o email verdadeiro, como por exemplo o que retorna no meu perfil.
 
 Conseguimos informações como
 - Social profile
@@ -86,12 +107,27 @@ O Skrapp.io é a solução que nos auxilia na extração de informações do Lin
 https://skrapp.io
 ```
 
+Podemos ver a pagina inicial dele abaixo
+![](images/skapp.io-01.png)
+
 > Infelizmente alguns contatos ele não consegue obter e-mails, mas retornas informações legais como:
 
 - Cargo
 - Empresa
 - Localização
 - Email (Mostrando uma porcentagem de ser o verdadeiro, por exemplo 75%)
+
+Ela tambem possui uma extensão para o google chrome, assim nos ajudando na hora do uso. Veja um exemplo de uso abaixo.
+
+![](images/skrapp-01.png)
+
+No perfil de uma pessoa no linkedin podemos clicar na extensão que fica no topo.
+
+![](images/skrapp-02.png)
+
+Podemos ver um exemplo de uso com uma pessoa que não tenho amizade no linkedin.
+
+![](images/skrapp-03.png)
 
 > Além disso é uma ferramenta paga, porem temos como usar ela de forma gratuita, porem temos um limite de créditos.
 
@@ -100,6 +136,9 @@ O **get prospect** é uma solução que nos ajuda na coleta de informações de 
 ```sh
 https://getprospect.io
 ```
+
+Podemos ver uma imagem da home do projeto
+![](images/get-prospect-01.png)
 
 Ele semelhante as soluções que mostramos anteriormente, também usa extensão no google chrome e conseguimos obter informações como:
 - Nome e sobrenome
@@ -111,6 +150,18 @@ Ele semelhante as soluções que mostramos anteriormente, também usa extensão 
 - Empresa
 - Website
 - Link do linkedin
+
+Com a extensão instalada ao acessar o linkedin vamos ter um botão a mais que é gerado pela aplicação.
+
+![](images/get-prospect-02.png)
+
+Ao pesquisar por palavras chaves tambem conseguimos usar o **get prospect**, ele tambem cria botões e que nos ajuda no uso da solução.
+
+![](images/get-prospect-03.png)
+
+Podemos ver o botão do **GP** em azul.
+
+![](images/get-prospect-04.png)
 
 > E algumas outras informações, mas essas já são necessários para obter informações. Um problema é que precisamos de um e-mail corporativo para usar ele, mas temos como criar contas free.
 
@@ -126,6 +177,12 @@ Podemos usar o wappalyzer para saber quais tecnologias uma empresa usa, dessa fo
 https://www.wappalyzer.com/
 ```
 
+![](images/wappalyzer-01.png)
+
+Vou realizar um exemplo buscando informaçoes do site da **uber** e ver o que ele nos retorna.
+
+![](images/wappalyzer-02.png)
+
 ## Buscando mais informações usando motores de busca
 Motores de busca pode nos auxiliar na coleta de informações de sites, alem de ter operadores que nos ajudam a filtrar melhor as informações e com poucos operadores já conseguimos trazer informações importantes.
 
@@ -137,6 +194,9 @@ Vamos começar usando o operador **site**, ele é responsável por filtrar infor
 ```sh
 site:ezdevs.com.br
 ```
+
+![](images/google-hacking-01.png)
+
 > Nesse exemplo só está buscando informações do site da ezdevs.com.br
 
 #### Filtrando negação
@@ -146,6 +206,8 @@ site:ezdevs.com.br -reactnative
 ```
 > Dessa forma estamos buscando no site da ezdevs.com.br e negando **reactnative**.
 
+![](images/google-hacking-02.png)
+
 #### Filtrando e trazendo
 Com o uso de aspas conseguimos buscar por uma determinada palavra, vou dar o exemplo da busca de palavras que tenhas **@ezdevs.com.br** no site da ezdevs.
 ```sh
@@ -153,8 +215,12 @@ site:ezdevs.com.br "@ezdevs.com.br"
 ```
 > Dessa forma conseguimos trazer possíveis e-mails.
 
+![](images/google-hacking-03.png)
+
 Vamos usar outro exemplo para buscar por possíveis telefones.
 ```sh
 site:ezdevs.com.br "(14)"
 ```
 > Sabendo que **(14)** é o código da região, podemos filtrar por possíveis números e assim coletando possíveis telefones.
+
+![](images/google-hacking-04.png)
