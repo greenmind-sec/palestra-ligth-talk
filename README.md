@@ -224,3 +224,16 @@ site:ezdevs.com.br "(14)"
 > Sabendo que **(14)** é o código da região, podemos filtrar por possíveis números e assim coletando possíveis telefones.
 
 ![](images/google-hacking-04.png)
+
+## Conclusão
+Desde 1930 as tecnicas de OSINT nos ajuda na coleta de informações, tudo começou durante a segunda guerra mundial quando os estados unidos monitoravam os pediodicos e a radio da união sovietica. Desde então ela vem ajudando profissionais da segurança da informação, policias, investigadores, vendedores e empresas que buscam esse tipo de informação. Com essas tecnicas o custo operacional é reduzido, mas precisamos ter um profissional que domine do assunto para filtrar as informações obtidas.
+
+Para finalizar, com as tecnicas aprendidas hoje, conseguimos obter e-mails, contato de telefone, quais possiveis tecnoligias uma empresa usa, redes sociais, aniversario, amigos de trabalho, localização, empresa que trabalha, tamanho da empresa, site da empresa, endereço da empresa, cargo e até um possivel resumo.
+
+Informações necessarios para que um possivel vendendor tenha informaçoes chaves de uma determinada empresa, conseguindo falar diretamente com pessoas chaves de uma organização.
+
+Agora de um ponto de vista de um hacker, essas informações tambem teria grande valor, ainda mais quando está realizando o reconhecimento ou até criando um ataque direcionado a um determinado alvo.
+
+Caso precise de ajuda é só deixar nos comentários que vamos responder o mais rápido possível.
+
+Obrigado e até a próxima
