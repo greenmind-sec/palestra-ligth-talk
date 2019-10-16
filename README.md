@@ -225,8 +225,58 @@ site:ezdevs.com.br "(14)"
 
 ![](images/google-hacking-04.png)
 
+## Bonus
+Temos algumas soluções que pode nos ajudar, ainda mais quando quando estamos coletando informações de um alvo, pois informações como nomes de usuarios, monitorar vazamentos, analise de tweets e informações publicas.
+
+### haveibeenpwned
+O projeto **haveibeenpwned** nos ajuda no reconhecimento de e-mails comprometidos com vazamentos. Basta inserir o e-mail que busca testar e se tiver alguma vulnerabilidade ele nos retorna em qual vazamento a conta foi prejudicada.
+```sh
+https://haveibeenpwned.com/
+```
+![](images/haveibeenpwned-01.png)
+
+### PwnedOrNot
+Infelizmente diariamente temos vazamento de dados em toda a internet, dessa forma monitorar essas informações podem ser de grande valor e o pwnedOrNot é uma ferramenta que usa informações OSINT para encontrar endereços de email comprometidos.
+
+Podemos encontrar o projeto no github
+```sh
+https://github.com/thewhiteh4t/pwnedOrNot
+```
+
+Ele nos retorna informações como
+- Name do branch
+- Nome de dominio
+- Data do branch
+- Estado de vazamento
+- Estado de verificação
+- Quando foi retirado
+- Spam Status
+
+### Sherlock
+Procurar usuarios pode ser complicado, mas com o Sherlock que é um projeto que nos auxilia na busca por nomes de usuários nas redes sociais, conseguimos buscar de uma vez se um determinado usuario tem outras redes sociais.
+```sh
+https://github.com/sherlock-project/sherlock
+```
+> Ele nos ajuda na busca por mais de **179** sites, testando se um determinado nome de usuario tem uma conta associada.
+
+### Twitter-intelligence
+O twitter é uma rede social, se souber monitorar ela usando palavras chaves corretas conseguimos rastrear e analisar o Twitter.
+Com o projeto twitter-intelligence conseguimos automatizar a coleta de informações e assim buscando até por leaks disponiveis lá.
+
+Podemos ver mais informaçoes do projeto em
+```sh
+https://github.com/batuhaniskr/twitter-intelligence
+```
+
+Conseguimos filtrar por
+- Nome de usuario
+- Localização
+- Palavras chaves
+- Uma determinada data
+- E até uma versão web para acessar
+
 ## Conclusão
-Desde 1930 as tecnicas de OSINT nos ajuda na coleta de informações, tudo começou durante a segunda guerra mundial quando os estados unidos monitoravam os pediodicos e a radio da união sovietica. Desde então ela vem ajudando profissionais da segurança da informação, policias, investigadores, vendedores e empresas que buscam esse tipo de informação. Com essas tecnicas o custo operacional é reduzido, mas precisamos ter um profissional que domine do assunto para filtrar as informações obtidas.
+Desde 1930 as tecnicas de OSINT nos ajuda na coleta de informações, tudo começou durante a segunda guerra mundial quando os estados unidos monitoravam os periodicos e a radio da união sovietica. Desde então ela vem ajudando profissionais da segurança da informação, policias, investigadores, vendedores e empresas que buscam esse tipo de informação. Com essas tecnicas o custo operacional é reduzido, mas precisamos ter um profissional que domine do assunto para filtrar as informações obtidas.
 
 Para finalizar, com as tecnicas aprendidas hoje, conseguimos obter e-mails, contato de telefone, quais possiveis tecnoligias uma empresa usa, redes sociais, aniversario, amigos de trabalho, localização, empresa que trabalha, tamanho da empresa, site da empresa, endereço da empresa, cargo e até um possivel resumo.
 
